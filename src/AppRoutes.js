@@ -9,10 +9,9 @@ const AppRoutes = () => {
     <Router>
       <NavBar />
       <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        <Route path="/" element={<Index />}>
-        </Route>
+        <Route exact path="/" element={<Index />}/>
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
